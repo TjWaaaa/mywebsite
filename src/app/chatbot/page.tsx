@@ -28,7 +28,6 @@ const Chatbot = () => {
 				imageSrc={image}
 				headline="CBACB"
 				description="This is not just a Chatbot"
-				description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
 				buttons={buttons}
 			/>
 			<ProjectDetails color="pampas" year="Summer Term 2023" techStack={techStack} tasks={tasks} occasion={occasion} />

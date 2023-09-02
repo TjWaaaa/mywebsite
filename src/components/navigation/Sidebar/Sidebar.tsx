@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from 'react'
 import Icon from '@/components/global/Icon/Icon'
 import React from 'react'
-import { HomeSections } from '@/app/page'
+import { HomeSections } from '@/types/reactTypes'
 
 export type SidebarProps = {
 	activeSection: HomeSections

@@ -1,4 +1,4 @@
-import { HomeSections } from '@/app/page'
+import { HomeSections } from "@/types/reactTypes"
 
 export const routes = {
 	home: (section: HomeSections) => {

@@ -1,5 +1,5 @@
 'use client'
-import { HomeSections } from '@/app/page'
+import { HomeSections } from '@/types/reactTypes'
 import Headline from '@/components/global/Headline/Headline'
 import { routes } from '@/services/routes/routes'
 import { Colors } from '@/types/tailwindTypes'

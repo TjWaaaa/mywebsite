@@ -40,7 +40,6 @@ const LightTomorrow = () => {
 				imageSrc={image01}
 				headline="Light Tomorrow"
 				description="An intelligent lighting control system for open-plan offices"
-				description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
 				buttons={buttons}
 			/>
 			<ProjectDescription

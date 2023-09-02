@@ -27,7 +27,6 @@ const Beast = () => {
 				imageSrc={image01}
 				headline="B.E.A.S.T"
 				description="Charging electric cars as an experience"
-				description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
 			/>
 			<ProjectDescription
 				section1Title="Recap Video"

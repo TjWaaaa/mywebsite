@@ -7,17 +7,11 @@ import Sidebar from '@/components/navigation/Sidebar/Sidebar'
 import { useEffect, useRef, useState } from 'react'
 import ExperienceSection from '@/components/local/(home)/ExperienceSection/ExperienceSection'
 import HeaderBar from '@/components/global/HeaderBar/HeaderBar'
-
-export enum HomeSections {
-	heroSection = 'heroSection',
-	experience = 'experience',
-	projects = 'projects',
-	playground = 'playground',
-	footer = 'footer',
-}
+import { HomeSections } from '@/types/reactTypes'
 
 export default function Home() {
 	const [activeSection, setActiveSection] = useState<HomeSections>(HomeSections.heroSection)
+	const [windowHeight, setWindowHeight] = useState<number>(0)
 	const [scrollY, setScrollY] = useState<number>(0)
 	const sections = useRef<any>([])
 
@@ -40,6 +34,8 @@ export default function Home() {
 	}
 
 	useEffect(() => {
+		setWindowHeight(window.innerHeight)
+
 		sections.current = document.querySelectorAll('[data-section]')
 		window.addEventListener('scroll', handleScroll)
 
@@ -66,7 +62,7 @@ export default function Home() {
 			<section data-section id={HomeSections.footer}>
 				<Footer />
 			</section>
-			<Sidebar activeSection={activeSection} isVisible={scrollY >= (window.innerHeight / 5) * 3} />
+			<Sidebar activeSection={activeSection} isVisible={scrollY >= (windowHeight / 5) * 3} />
 		</main>
 	)
 }

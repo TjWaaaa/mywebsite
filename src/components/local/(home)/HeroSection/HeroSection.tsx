@@ -1,13 +1,17 @@
 import Image from 'next/image'
 import image from '@/assets/images/ImageMe.png'
-import HeaderBar from '../../../global/HeaderBar/HeaderBar'
-import Canvas from './Canvas'
 import Headline from '@/components/global/Headline/Headline'
 import Icon from '@/components/global/Icon/Icon'
 import { useRouter } from 'next/navigation'
 import { routes } from '@/services/routes/routes'
-import { HomeSections } from '@/app/page'
+import { HomeSections } from '@/types/reactTypes'
 import { useEffect, useState } from 'react'
+import dynamic from 'next/dynamic'
+
+const Canvas = dynamic(
+  () => import('./Canvas'),
+  { ssr: false }
+)
 
 export type HeroSectionProps = {
 	scrollY: number

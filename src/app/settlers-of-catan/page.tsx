@@ -26,7 +26,6 @@ const Settlers = () => {
 				imageSrc={image}
 				headline="Settlers of Catan"
 				description="Charging electric cars as an experience"
-				description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
 			/>
 			<ProjectDetails color="pampas" year="Summer Term 2023" techStack={techStack} tasks={tasks} occasion={occasion} />
 			<Footer />
