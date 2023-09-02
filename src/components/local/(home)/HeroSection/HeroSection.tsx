@@ -6,7 +6,7 @@ import Headline from '@/components/global/Headline/Headline'
 import Icon from '@/components/global/Icon/Icon'
 import { useRouter } from 'next/navigation'
 import { routes } from '@/services/routes/routes'
-import { HomeSections } from '@/app/page'
+import { HomeSections } from '@/types/reactTypes'
 import { useEffect, useState } from 'react'
 
 export type HeroSectionProps = {

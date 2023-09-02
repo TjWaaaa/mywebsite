@@ -7,14 +7,7 @@ import Sidebar from '@/components/navigation/Sidebar/Sidebar'
 import { useEffect, useRef, useState } from 'react'
 import ExperienceSection from '@/components/local/(home)/ExperienceSection/ExperienceSection'
 import HeaderBar from '@/components/global/HeaderBar/HeaderBar'
-
-export enum HomeSections {
-	heroSection = 'heroSection',
-	experience = 'experience',
-	projects = 'projects',
-	playground = 'playground',
-	footer = 'footer',
-}
+import { HomeSections } from '@/types/reactTypes'
 
 export default function Home() {
 	const [activeSection, setActiveSection] = useState<HomeSections>(HomeSections.heroSection)

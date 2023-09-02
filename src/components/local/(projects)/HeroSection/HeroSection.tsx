@@ -1,5 +1,5 @@
 'use client'
-import { HomeSections } from '@/app/page'
+import { HomeSections } from '@/types/reactTypes'
 import Button, { ButtonProps } from '@/components/global/Button/Button'
 import HeaderBar from '@/components/global/HeaderBar/HeaderBar'
 import Headline from '@/components/global/Headline/Headline'
