@@ -1,4 +1,3 @@
-'use client'
 import Footer from '@/components/global/Footer/Footer'
 import { ButtonProps } from '@/components/global/Button/Button'
 import { routes } from '@/services/routes/routes'
