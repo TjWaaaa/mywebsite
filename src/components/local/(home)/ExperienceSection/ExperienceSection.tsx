@@ -1,4 +1,5 @@
 import Headline from '@/components/global/Headline/Headline'
+import ExperienceCard from '../../ExperienceCard/ExperienceCard'
 
 const ExperienceSection: React.FC = () => {
 	return (
@@ -10,28 +11,21 @@ const ExperienceSection: React.FC = () => {
 					</Headline>
 				</div>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-					<div className="px-8 py-10 border-4 border-solid rounded-xl">
-						<Headline level={3} size="2xl">
-							UI & UX Design
-						</Headline>
-						<p className="mt-4">Passionate about creating beautiful and intuitive user interfaces and experiences</p>
-					</div>
-					<div className="px-8 py-10 border-4 border-solid rounded-xl">
-						<Headline level={3} size="2xl">
-							Webdevelopment Frontend & Backend
-						</Headline>
-						<p className="mt-4">
-							Experienced in building responsive and performant web applications using React, NextJS and NestJS
-						</p>
-					</div>
-					<div className="px-8 py-10 border-4 border-solid rounded-xl">
-						<Headline level={3} size="2xl">
-							Software Development
-						</Headline>
-						<p className="mt-4">
-							Skilled in object oriented programming, design patterns, data structures and algorithms
-						</p>
-					</div>
+					<ExperienceCard
+						title="UI & UX Design"
+						icon="brush"
+						desctiption="Passionate about creating beautiful and intuitive user interfaces and experiences"
+					/>
+					<ExperienceCard
+						title="Web Dev"
+						icon="code"
+						desctiption="Experienced in building responsive and performant web applications"
+					/>
+					<ExperienceCard
+						title="Software Dev"
+						icon="data_object"
+						desctiption="Skilled in object oriented programming, design patterns, data structures and algorithms"
+					/>
 				</div>
 			</div>
 		</div>
