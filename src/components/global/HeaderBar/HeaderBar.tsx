@@ -17,7 +17,7 @@ type HeaderBarProps = {
 
 const HeaderBar: React.FC<HeaderBarProps> = ({ title, backgroundColor = 'pampas' }) => {
 	const [menuOpen, setMenuOpen] = useState(false)
-	const [isShrunk, setIsShrunk] = useState<boolean>(false)
+	const [isShrunk, setIsShrunk] = useState<boolean>()
 	const router = useRouter()
 
 	useEffect(() => {
@@ -26,7 +26,7 @@ const HeaderBar: React.FC<HeaderBarProps> = ({ title, backgroundColor = 'pampas'
 
 			console.log(scrollY, pageYOffset)
 
-			if (!isShrunk && pageYOffset >= 56) {
+			if (!isShrunk && pageYOffset >= 50) {
 				setIsShrunk(true)
 				console.log('set true')
 			} else if (isShrunk && pageYOffset < 2) {
