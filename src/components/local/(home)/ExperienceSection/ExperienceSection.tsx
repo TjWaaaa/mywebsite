@@ -10,12 +10,7 @@ const ExperienceSection: React.FC = () => {
 						My Experience
 					</Headline>
 				</div>
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-					<ExperienceCard
-						title="UI & UX Design"
-						icon="brush"
-						desctiption="Passionate about creating beautiful and intuitive user interfaces and experiences"
-					/>
+				<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-2">
 					<ExperienceCard
 						title="Web Dev"
 						icon="code"
@@ -24,6 +19,16 @@ const ExperienceSection: React.FC = () => {
 					<ExperienceCard
 						title="Software Dev"
 						icon="data_object"
+						desctiption="Skilled in object oriented programming, design patterns, data structures and algorithms"
+					/>
+					<ExperienceCard
+						title="UI & UX Design"
+						icon="brush"
+						desctiption="Passionate about creating beautiful and intuitive user interfaces and experiences"
+					/>
+					<ExperienceCard
+						title="User Testing"
+						icon="person"
 						desctiption="Skilled in object oriented programming, design patterns, data structures and algorithms"
 					/>
 				</div>

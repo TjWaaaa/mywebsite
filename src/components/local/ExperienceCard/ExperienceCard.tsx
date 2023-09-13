@@ -10,9 +10,9 @@ export type ExperienceCardProps = {
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({ title, icon, desctiption }) => {
 	return (
-		<div className="px-8 py-8 border-4 border-solid rounded-xl">
+		<div className="px-8 pt-10 pb-8 border-4 border-solid rounded-xl">
 			<div className="w-full mb-4 flex gap-4 items-center">
-				<Icon icon={icon} size="!text-4xl" />
+				<Icon icon={icon} size="4xl" />
 				<Headline level={3} size="2xl">
 					{title}
 				</Headline>
