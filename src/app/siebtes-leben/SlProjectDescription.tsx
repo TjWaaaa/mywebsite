@@ -24,9 +24,9 @@ const SlProjectDescription = () => {
                     tries to write their will on their own will quickly run into problems.`}
 					</p>
 					<div className="pt-4 lg:pt-4 xl:pt-6 2xl:pt-10 hidden lg:flex gap-10 justify-center">
-						<Icon icon="gavel" size="!text-5xl" />
-						<Icon icon="security" size="!text-5xl" />
-						<Icon icon="schedule" size="!text-5xl" />
+						<Icon icon="gavel" size="5xl" />
+						<Icon icon="security" size="5xl" />
+						<Icon icon="schedule" size="5xl" />
 					</div>
 				</div>
 			}

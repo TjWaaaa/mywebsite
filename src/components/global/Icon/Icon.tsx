@@ -1,5 +1,5 @@
-import { getTextColor } from '@/services/tailwindHelpers'
-import { Colors } from '@/types/tailwindTypes'
+import { getFontSize, getTextColor } from '@/services/tailwindHelpers'
+import { Colors, Sizes } from '@/types/tailwindTypes'
 import { MaterialSymbol } from 'material-symbols'
 
 type IconProps = {
@@ -10,26 +10,16 @@ type IconProps = {
 	/** Icon color */
 	color?: Colors
 	/** Icon size */
-	size?:
-		| '!text-xs'
-		| '!text-sm'
-		| '!text-md'
-		| '!text-lg'
-		| '!text-xl'
-		| '!text-2xl'
-		| '!text-3xl'
-		| '!text-4xl'
-		| '!text-5xl'
-		| '!text-6xl'
+	size?: Sizes
 }
 
 /**
  * The `Icon` component is used to display a material icon.
  */
-const Icon: React.FC<IconProps> = ({ icon, isFilled = false, color = 'black', size = '!text-md' }) => (
+const Icon: React.FC<IconProps> = ({ icon, isFilled = false, color = 'black', size = 'md' }) => (
 	<i
 		style={isFilled ? { fontVariationSettings: "'FILL' 1" } : {}}
-		className={`material-symbols-rounded ${getTextColor(color)} ${size} duration-700 ease-in-out`}
+		className={`material-symbols-rounded duration-700 ease-in-out ${getTextColor(color)} !${getFontSize(size)}`}
 	>
 		{icon}
 	</i>

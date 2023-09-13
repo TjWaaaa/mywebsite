@@ -1,4 +1,5 @@
 import Headline from '@/components/global/Headline/Headline'
+import ExperienceCard from '../../ExperienceCard/ExperienceCard'
 
 const ExperienceSection: React.FC = () => {
 	return (
@@ -9,34 +10,27 @@ const ExperienceSection: React.FC = () => {
 						My Experience
 					</Headline>
 				</div>
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
-					<div className="px-8 py-10 border-4 border-solid rounded-xl">
-						<Headline level={3} size="2xl">
-							UI & UX Design
-						</Headline>
-						<p className="mt-4">
-							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-							et dolore magna aliquyam erat,
-						</p>
-					</div>
-					<div className="px-8 py-10 border-4 border-solid rounded-xl">
-						<Headline level={3} size="2xl">
-							Frontend Dev, React, NextJS
-						</Headline>
-						<p className="mt-4">
-							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-							et dolore magna aliquyam erat,
-						</p>
-					</div>
-					<div className="px-8 py-10 border-4 border-solid rounded-xl">
-						<Headline level={3} size="2xl">
-							User Testing
-						</Headline>
-						<p className="mt-4">
-							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-							et dolore magna aliquyam erat,
-						</p>
-					</div>
+				<div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-2">
+					<ExperienceCard
+						title="Web Dev"
+						icon="code"
+						desctiption="Experienced in building responsive and performant web applications"
+					/>
+					<ExperienceCard
+						title="Software Dev"
+						icon="data_object"
+						desctiption="Skilled in object oriented programming, design patterns, data structures and algorithms"
+					/>
+					<ExperienceCard
+						title="UI & UX Design"
+						icon="brush"
+						desctiption="Passionate about creating beautiful and intuitive user interfaces and experiences"
+					/>
+					<ExperienceCard
+						title="User Testing"
+						icon="person"
+						desctiption="Experienced in conducting user tests and interviews to improve the user experience of a product"
+					/>
 				</div>
 			</div>
 		</div>
