@@ -1,5 +1,4 @@
 'use client'
-import { useEffect, useRef, useState } from 'react'
 import Icon from '@/components/global/Icon/Icon'
 import React from 'react'
 import { HomeSections } from '@/types/reactTypes'
@@ -36,13 +35,13 @@ const Sidebar: React.FC<SidebarProps> = ({ activeSection = '', isVisible }) => {
 			}`}
 		>
 			<ListItem href={`#${HomeSections.heroSection}`} isActive={activeSection === HomeSections.heroSection}>
-				<Icon icon="house" />
+				<Icon icon="house" size="2xl" />
 			</ListItem>
 			<ListItem href={`#${HomeSections.experience}`} isActive={activeSection === HomeSections.experience}>
-				<Icon icon="school" />
+				<Icon icon="school" size="2xl" />
 			</ListItem>
 			<ListItem href={`#${HomeSections.projects}`} isActive={activeSection === HomeSections.projects}>
-				<Icon icon="amp_stories" />
+				<Icon icon="amp_stories" size="2xl" />
 			</ListItem>
 			{/* <ListItem href={`#${HomeSections.playground}`} isActive={activeSection === HomeSections.playground}>
 				<Icon icon="build" />

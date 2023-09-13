@@ -59,9 +59,9 @@ const Button: React.FC<ButtonProps> = ({
 					color,
 				)} ${getTextColor(textColor)}`}
 			>
-				{icon && iconPos === 'left' && <Icon icon={icon} />}
+				{icon && iconPos === 'left' && <Icon icon={icon} size="2xl" />}
 				<p className={hasPadding ? `pt-1` : ''}>{text}</p>
-				{icon && iconPos === 'right' && <Icon icon={icon} />}
+				{icon && iconPos === 'right' && <Icon icon={icon} size="2xl" />}
 			</Link>
 		)
 	} else {
