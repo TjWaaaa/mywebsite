@@ -14,27 +14,22 @@ const ExperienceSection: React.FC = () => {
 						<Headline level={3} size="2xl">
 							UI & UX Design
 						</Headline>
+						<p className="mt-4">Passionate about creating beautiful and intuitive user interfaces and experiences</p>
+					</div>
+					<div className="px-8 py-10 border-4 border-solid rounded-xl">
+						<Headline level={3} size="2xl">
+							Webdevelopment Frontend & Backend
+						</Headline>
 						<p className="mt-4">
-							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-							et dolore magna aliquyam erat,
+							Experienced in building responsive and performant web applications using React, NextJS and NestJS
 						</p>
 					</div>
 					<div className="px-8 py-10 border-4 border-solid rounded-xl">
 						<Headline level={3} size="2xl">
-							Frontend Dev, React, NextJS
+							Software Development
 						</Headline>
 						<p className="mt-4">
-							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-							et dolore magna aliquyam erat,
-						</p>
-					</div>
-					<div className="px-8 py-10 border-4 border-solid rounded-xl">
-						<Headline level={3} size="2xl">
-							User Testing
-						</Headline>
-						<p className="mt-4">
-							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-							et dolore magna aliquyam erat,
+							Skilled in object oriented programming, design patterns, data structures and algorithms
 						</p>
 					</div>
 				</div>
