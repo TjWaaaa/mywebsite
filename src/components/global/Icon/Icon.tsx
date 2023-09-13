@@ -19,7 +19,7 @@ type IconProps = {
 const Icon: React.FC<IconProps> = ({ icon, isFilled = false, color = 'black', size = 'md' }) => (
 	<i
 		style={isFilled ? { fontVariationSettings: "'FILL' 1" } : {}}
-		className={`material-symbols-rounded duration-700 ease-in-out ${getTextColor(color)} !${getFontSize(size)}`}
+		className={`${getTextColor(color)} ${getFontSize(size)} material-symbols-rounded duration-700 ease-in-out`}
 	>
 		{icon}
 	</i>
