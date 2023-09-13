@@ -29,7 +29,7 @@ const ExperienceSection: React.FC = () => {
 					<ExperienceCard
 						title="User Testing"
 						icon="person"
-						desctiption="Skilled in object oriented programming, design patterns, data structures and algorithms"
+						desctiption="Skilled in conducting user tests and interviews to improve the user experience of a product"
 					/>
 				</div>
 			</div>
