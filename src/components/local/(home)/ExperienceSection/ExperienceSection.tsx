@@ -10,7 +10,7 @@ const ExperienceSection: React.FC = () => {
 						My Experience
 					</Headline>
 				</div>
-				<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-2">
+				<div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-2">
 					<ExperienceCard
 						title="Web Dev"
 						icon="code"
