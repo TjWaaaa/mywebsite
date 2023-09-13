@@ -43,7 +43,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollY }) => {
 								onClick={() => router.replace(routes.home(HomeSections.experience))}
 								className="relative h-12 -bottom-2 hidden sm:inline"
 							>
-								<Icon icon="arrow_downward" size="!text-5xl" color={scrollY <= 100 ? 'pampas' : 'transparent'} />
+								<Icon icon="arrow_downward" size="5xl" color={scrollY <= 100 ? 'pampas' : 'transparent'} />
 							</button>
 							{/* TODO: change to <Button /> */}
 						</div>
