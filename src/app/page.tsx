@@ -11,30 +11,30 @@ import { HomeSections } from '@/types/reactTypes'
 
 export default function Home() {
 	const [activeSection, setActiveSection] = useState<HomeSections>(HomeSections.heroSection)
-	const [windowHeight, setWindowHeight] = useState<number>(0)
+	const [windowHeight, setWindowHeight] = useState<number>(5000)
 	const [scrollY, setScrollY] = useState<number>(0)
 	const sections = useRef<any>([])
 
-	const handleScroll = () => {
-		const pageYOffset = window.scrollY
-		setScrollY(pageYOffset)
-
-		let newActiveSection = HomeSections.heroSection
-
-		sections.current.forEach((section: any) => {
-			const sectionOffsetTop = section.offsetTop
-			const sectionHeight = section.offsetHeight
-
-			if (pageYOffset >= sectionOffsetTop && pageYOffset < sectionOffsetTop + sectionHeight) {
-				newActiveSection = section.id
-			}
-		})
-
-		setActiveSection(newActiveSection)
-	}
-
 	useEffect(() => {
 		setWindowHeight(window.innerHeight)
+
+		const handleScroll = () => {
+			const pageYOffset = window.scrollY
+			setScrollY(pageYOffset)
+
+			let newActiveSection = HomeSections.heroSection
+
+			sections.current.forEach((section: any) => {
+				const sectionOffsetTop = section.offsetTop
+				const sectionHeight = section.offsetHeight
+
+				if (pageYOffset >= sectionOffsetTop && pageYOffset < sectionOffsetTop + sectionHeight) {
+					newActiveSection = section.id
+				}
+			})
+
+			setActiveSection(newActiveSection)
+		}
 
 		sections.current = document.querySelectorAll('[data-section]')
 		window.addEventListener('scroll', handleScroll)
@@ -42,18 +42,18 @@ export default function Home() {
 		return () => {
 			window.removeEventListener('scroll', handleScroll)
 		}
-	}, [])
+	}, [scrollY])
 
 	return (
 		<main className="scroll-smooth">
 			<HeaderBar />
-			<section data-section id={HomeSections.heroSection}>
+			<section data-section id={HomeSections.heroSection} className="scroll-mt-32">
 				<HeroSection scrollY={scrollY} />
 			</section>
-			<section data-section id={HomeSections.experience}>
+			<section data-section id={HomeSections.experience} className="scroll-mt-20">
 				<ExperienceSection />
 			</section>
-			<section data-section id={HomeSections.projects}>
+			<section data-section id={HomeSections.projects} className="scroll-mt-20">
 				<ProjectSection />
 			</section>
 			{/* <section data-section id={HomeSections.playground}>

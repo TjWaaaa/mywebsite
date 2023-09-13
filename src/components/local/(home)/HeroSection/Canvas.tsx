@@ -14,7 +14,7 @@ type AnimationMode = {
 }
 
 const mode1: AnimationMode = {
-	range: 18,
+	range: 16,
 	mapBottomLimit: -0.1,
 	mapTopLimit: 0.9,
 	noiseX: 0.0015,
@@ -36,7 +36,7 @@ const mode2: AnimationMode = {
 }
 
 const mode3: AnimationMode = {
-	range: 18,
+	range: 16,
 	mapBottomLimit: -0.4,
 	mapTopLimit: 1,
 	noiseX: 0.001,

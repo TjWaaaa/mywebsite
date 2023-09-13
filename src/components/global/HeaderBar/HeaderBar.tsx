@@ -6,7 +6,7 @@ import { Colors } from '@/types/tailwindTypes'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import Button from '../Button/Button'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 type HeaderBarProps = {
 	/** Header Title of the current page */
@@ -17,7 +17,30 @@ type HeaderBarProps = {
 
 const HeaderBar: React.FC<HeaderBarProps> = ({ title, backgroundColor = 'pampas' }) => {
 	const [menuOpen, setMenuOpen] = useState(false)
+	const [isShrunk, setIsShrunk] = useState<boolean>()
 	const router = useRouter()
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const pageYOffset = window.scrollY
+
+			console.log(scrollY, pageYOffset)
+
+			if (!isShrunk && pageYOffset >= 50) {
+				setIsShrunk(true)
+				console.log('set true')
+			} else if (isShrunk && pageYOffset < 2) {
+				setIsShrunk(false)
+				console.log('set false')
+			}
+		}
+
+		window.addEventListener('scroll', handleScroll)
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll)
+		}
+	}, [isShrunk])
 
 	const getBackgroundColor = (color: Colors) => {
 		switch (color) {
@@ -39,12 +62,12 @@ const HeaderBar: React.FC<HeaderBarProps> = ({ title, backgroundColor = 'pampas'
 	}
 
 	return (
-		<div className="sticky sm:relative top-0 z-50">
+		<div className="sticky top-0 z-50">
 			<div className="relative">
 				<div
-					className={`relative z-40 w-full h-16 min-h-fit sm:h-32 drop-shadow-sm ${getBackgroundColor(
-						backgroundColor,
-					)}`}
+					className={`relative z-40 w-full min-h-fit drop-shadow-sm duration-100 h-16 ${
+						isShrunk ? 'sm:h-20' : 'sm:h-32'
+					} ${getBackgroundColor(backgroundColor)}`}
 				>
 					<div className="container h-full flex justify-between items-center">
 						<div className="flex gap-8 justify-center items-center">

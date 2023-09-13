@@ -8,10 +8,7 @@ import { HomeSections } from '@/types/reactTypes'
 import { useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
 
-const Canvas = dynamic(
-  () => import('./Canvas'),
-  { ssr: false }
-)
+const Canvas = dynamic(() => import('./Canvas'), { ssr: false })
 
 export type HeroSectionProps = {
 	scrollY: number
@@ -28,22 +25,22 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollY }) => {
 	}, [])
 
 	return (
-		<div className="w-full sm:h-[calc(100vh_-_128px)]">
+		<div className="w-full h-[calc(100vh_-_128px)]">
 			<div id="canvas" className="relative w-full h-full">
 				<Canvas mode={backgroundMode} strokeWeight={12} />
 				<div className="container relative flex flex-col sm:flex-row h-full z-20">
-					<div className="w-full sm:w-1/2 pt-14 sm:pt-16 pb-10 sm:pb-8 flex flex-col justify-between sm:items-start items-center text-center sm:text-left">
+					<div className="flex-1 sm:w-1/2 pt-14 sm:pt-16 pb-10 sm:pb-8 flex flex-col justify-between sm:items-start items-center text-center sm:text-left">
 						<Headline level={1} size="8xl">
 							Creative Developer
 						</Headline>
-						<div className="w-9/12 sm:w-full pt-10 md:pt-0 pb-4 sm:pl-1 h-2/3 flex overflow-hidden gap-4 md:gap-20 items-end">
+						<div className="w-9/12 sm:w-full h-full sm:h-2/3 sm:pt-14 md:pt-0 pb-4 sm:pl-1 flex gap-4 md:gap-20 items-end">
 							<Image
 								className="w-full sm:w-auto h-48 sm:h-64 object-cover object-[0%_35%] sm:object-top drop-shadow-sm rounded-xl"
 								src={image}
 								alt="Me"
 							/>
 							<button
-								onClick={() => router.replace(routes.home(HomeSections.projects))}
+								onClick={() => router.replace(routes.home(HomeSections.experience))}
 								className="relative h-12 -bottom-2 hidden sm:inline"
 							>
 								<Icon icon="arrow_downward" size="!text-5xl" color={scrollY <= 100 ? 'pampas' : 'transparent'} />
