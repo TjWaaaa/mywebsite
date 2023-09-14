@@ -25,7 +25,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollY }) => {
 	}, [])
 
 	return (
-		<div className="w-full h-[calc(100vh_-_128px)]">
+		<div className="w-full md:h-[calc(100vh_-_128px)]">
 			<div id="canvas" className="relative w-full h-full">
 				<Canvas mode={backgroundMode} strokeWeight={12} />
 				<div className="container relative flex flex-col sm:flex-row h-full z-20">
@@ -33,7 +33,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollY }) => {
 						<Headline level={1} size="8xl">
 							Creative Developer
 						</Headline>
-						<div className="w-9/12 sm:w-full h-full sm:h-2/3 sm:pt-14 md:pt-0 pb-4 sm:pl-1 flex gap-4 md:gap-20 items-end">
+						<div className="w-9/12 sm:w-full h-full sm:h-2/3 pt-14 md:pt-0 pb-4 sm:pl-1 flex gap-4 md:gap-20 items-end">
 							<Image
 								className="w-full sm:w-auto h-48 sm:h-64 object-cover object-[0%_35%] sm:object-top drop-shadow-sm rounded-xl"
 								src={image}
