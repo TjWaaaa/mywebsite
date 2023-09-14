@@ -72,9 +72,9 @@ const Button: React.FC<ButtonProps> = ({
 					color,
 				)} ${getTextColor(textColor)}`}
 			>
-				{icon && iconPos === 'left' && <Icon icon={icon} />}
+				{icon && iconPos === 'left' && <Icon icon={icon} size="2xl" />}
 				{text}
-				{icon && iconPos === 'right' && <Icon icon={icon} />}
+				{icon && iconPos === 'right' && <Icon icon={icon} size="2xl" />}
 			</button>
 		)
 	}
