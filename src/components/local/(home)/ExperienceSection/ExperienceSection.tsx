@@ -3,14 +3,14 @@ import ExperienceCard from '../../ExperienceCard/ExperienceCard'
 
 const ExperienceSection: React.FC = () => {
 	return (
-		<div className="w-full bg-pampas-200 py-20">
+		<div className="w-full bg-pampas-200 py-12 md:py-20">
 			<div className="container md:pr-20 lg:pr-24 xl:pr-28">
 				<div className="mb-6">
 					<Headline level={2} size="5xl">
 						My Experience
 					</Headline>
 				</div>
-				<div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-2">
+				<div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
 					<ExperienceCard
 						title="Web Dev"
 						icon="code"

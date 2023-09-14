@@ -9,7 +9,7 @@ import Headline from '@/components/global/Headline/Headline'
 
 const ProjectSection: React.FC = () => {
 	return (
-		<div className="w-full py-20">
+		<div className="w-full py-12 md:py-20">
 			<div className="container md:pr-20 lg:pr-24 xl:pr-28">
 				<div className="mb-6">
 					<Headline level={2} size="5xl">
