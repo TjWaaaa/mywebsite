@@ -1,6 +1,5 @@
 'use client'
 import HeroSection from '@/components/local/(home)/HeroSection/HeroSection'
-import PlaygroundSection from '@/components/local/(home)/PlaygroundSection/PlaygroundSection'
 import ProjectSection from '@/components/local/(home)/ProjectSection/ProjectSection'
 import Footer from '@/components/global/Footer/Footer'
 import Sidebar from '@/components/navigation/Sidebar/Sidebar'
@@ -8,6 +7,8 @@ import { useEffect, useRef, useState } from 'react'
 import ExperienceSection from '@/components/local/(home)/ExperienceSection/ExperienceSection'
 import HeaderBar from '@/components/global/HeaderBar/HeaderBar'
 import { HomeSections } from '@/types/reactTypes'
+
+const headerHeight = 80
 
 export default function Home() {
 	const [activeSection, setActiveSection] = useState<HomeSections>(HomeSections.heroSection)
@@ -28,7 +29,10 @@ export default function Home() {
 				const sectionOffsetTop = section.offsetTop
 				const sectionHeight = section.offsetHeight
 
-				if (pageYOffset >= sectionOffsetTop && pageYOffset < sectionOffsetTop + sectionHeight) {
+				if (
+					pageYOffset >= sectionOffsetTop - headerHeight &&
+					pageYOffset < sectionOffsetTop + sectionHeight - headerHeight
+				) {
 					newActiveSection = section.id
 				}
 			})
