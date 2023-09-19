@@ -24,14 +24,10 @@ const HeaderBar: React.FC<HeaderBarProps> = ({ title, backgroundColor = 'pampas'
 		const handleScroll = () => {
 			const pageYOffset = window.scrollY
 
-			console.log(scrollY, pageYOffset)
-
 			if (!isShrunk && pageYOffset >= 50) {
 				setIsShrunk(true)
-				console.log('set true')
 			} else if (isShrunk && pageYOffset < 2) {
 				setIsShrunk(false)
-				console.log('set false')
 			}
 		}
 
