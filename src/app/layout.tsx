@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 		googleBot: {
 			index: false,
 			follow: false,
+			nocache: true,
 		},
 	},
 }
