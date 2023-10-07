@@ -6,6 +6,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
 	title: 'Timo Waldherr • Software Engineering and UX Design',
 	description: 'Software Engineer from Stuttgart, Germany. Studying Mobile Medien B.Sc. at HdM (Heschschule der Medien',
+	robots: 'noindex, nofollow',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
