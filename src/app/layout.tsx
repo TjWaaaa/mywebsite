@@ -5,8 +5,16 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
 	title: 'Timo Waldherr • Software Engineering and UX Design',
-	description: 'Software Engineer from Stuttgart, Germany. Studying Mobile Medien B.Sc. at HdM (Heschschule der Medien',
-	robots: 'noindex, nofollow',
+	description: 'Software Engineer from Stuttgart, Germany. Studying Mobile Medien B.Sc. at HdM (Hochschule der Medien',
+	robots: {
+		index: false,
+		follow: false,
+		nocache: true,
+		googleBot: {
+			index: false,
+			follow: false,
+		},
+	},
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
