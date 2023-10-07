@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
 	title: 'Timo Waldherr • Software Engineering and UX Design',
-	description: 'Software Engineer from Stuttgart, Germany. Studying Mobile Medien B.Sc. at HdM (Heschschule der Medien',
+	description: 'Software Engineer from Stuttgart, Germany. Studying Mobile Medien B.Sc. at HdM (Hochschule der Medien',
 	robots: 'noindex, nofollow',
 }
 
