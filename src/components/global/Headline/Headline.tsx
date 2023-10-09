@@ -14,6 +14,8 @@ type HeadlineProps = {
 	fontWeight?: FontWeights
 	/** Text align */
 	textAlign?: 'text-left' | 'text-center' | 'text-right'
+	/** Custom Styles */
+	className?: string
 }
 
 const Headline: React.FC<HeadlineProps> = ({
@@ -23,6 +25,7 @@ const Headline: React.FC<HeadlineProps> = ({
 	fontStyle = 'font-sans',
 	fontWeight = 'semibold',
 	textAlign,
+	className = '',
 }) => {
 	const CustomTag = `h${level}` as keyof JSX.IntrinsicElements
 
@@ -82,7 +85,7 @@ const Headline: React.FC<HeadlineProps> = ({
 		<CustomTag
 			className={`tracking-tight leading-none ${textAlign} ${fontStyle} ${getFontSize(size)} ${getFontWeight(
 				fontWeight,
-			)}`}
+			)} ${className}`}
 		>
 			{children}
 		</CustomTag>
