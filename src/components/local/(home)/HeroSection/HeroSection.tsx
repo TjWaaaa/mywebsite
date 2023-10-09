@@ -28,7 +28,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollY }) => {
 		<div className="w-full sm:h-[calc(100vh_-_128px)]">
 			<div id="canvas" className="relative w-full h-full">
 				<Canvas mode={backgroundMode} strokeWeight={12} />
-				<div className="container relative flex flex-col h-full z-20 pt-14 sm:pt-24">
+				<div className="container relative flex flex-col h-full z-20 pt-14 sm:pt-20">
 					<Headline level={1} size="7xl" className="text-center sm:text-left whitespace-nowrap">
 						Hi, I{"'"}m <span className="text-pampas-500">Timo</span>, I{"'"}m a<br />
 						Fullstack Developer
