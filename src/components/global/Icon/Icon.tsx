@@ -1,4 +1,3 @@
-import { getTextColor } from '@/services/tailwindHelpers'
 import { Colors, Sizes } from '@/types/tailwindTypes'
 import { MaterialSymbol } from 'material-symbols'
 
@@ -43,6 +42,29 @@ const Icon: React.FC<IconProps> = ({ icon, isFilled = false, color = 'black', si
 				return '!text-7xl'
 			case '8xl':
 				return '!text-6xl sm:text-7xl lg:text-8xl'
+		}
+	}
+
+	const getTextColor = (color: Colors) => {
+		switch (color) {
+			case 'yellow':
+				return 'text-yellow-500'
+			case 'blue':
+				return 'text-blue-500'
+			case 'green':
+				return 'text-green-500'
+			case 'red':
+				return 'text-red-500'
+			case 'white':
+				return 'text-white'
+			case 'black':
+				return 'text-black'
+			case 'main':
+				return 'text-main-800'
+			case 'accent':
+				return 'text-accent-500 hover:text-accent-600'
+			case 'transparent':
+				return 'text-transparent'
 		}
 	}
 

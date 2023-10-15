@@ -38,7 +38,7 @@ const ProjectPreview: React.FC<ProjectPreviewProps> = ({
 
 	return (
 		<Link className={`group ${getColSpan()}`} href={href}>
-			<div className="h-40 sm:h-60 md:h-80 w-full bg-pampas-400 border-4 border-solid group-hover:border-pampas-500 rounded-2xl overflow-hidden duration-150 drop-shadow-sm">
+			<div className="h-40 sm:h-60 md:h-80 w-full bg-main-400 border-4 border-solid border-main-100 group-hover:border-main-500 rounded-2xl overflow-hidden duration-150 drop-shadow-sm">
 				<Image
 					className={`w-full h-full object-cover group-hover:scale-[100.5%] duration-150 ${imagePos}`}
 					src={imageSrc}

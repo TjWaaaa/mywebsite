@@ -27,7 +27,7 @@ const Settlers = () => {
 				headline="Settlers of Catan"
 				description="Charging electric cars as an experience"
 			/>
-			<ProjectDetails color="pampas" year="Summer Term 2023" techStack={techStack} tasks={tasks} occasion={occasion} />
+			<ProjectDetails color="main" year="Summer Term 2023" techStack={techStack} tasks={tasks} occasion={occasion} />
 			<Footer />
 		</div>
 	)

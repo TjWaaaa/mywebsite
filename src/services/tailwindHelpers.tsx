@@ -14,8 +14,8 @@ export const getBackgroundColor = (color: Colors) => {
 			return 'bg-white'
 		case 'black':
 			return 'bg-black'
-		case 'pampas':
-			return 'bg-pampas-200'
+		case 'main':
+			return 'bg-main-200'
 	}
 }
 
@@ -33,8 +33,12 @@ export const getTextColor = (color: Colors) => {
 			return 'text-white'
 		case 'black':
 			return 'text-black'
-		case 'pampas':
-			return 'text-pampas-800'
+		case 'main':
+			return 'text-main-800'
+		case 'accent':
+			return 'text-accent-600 hover:text-accent-400'
+		case 'transparent':
+			return 'text-transparent'
 	}
 }
 

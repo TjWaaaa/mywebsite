@@ -12,7 +12,7 @@ const PillList: React.FC<PillListProps> = ({ items }) => {
 			{items.map((item, index) => (
 				<li
 					key={index}
-					className="mr-3 mb-3 inline-flex text-base px-6 pt-3 pb-2 border border-solid border-pampas-600 rounded-lg"
+					className="mr-3 mb-3 inline-flex text-base px-6 pt-3 pb-2 border border-solid border-main-600 rounded-lg"
 				>
 					{item}
 				</li>
@@ -29,7 +29,7 @@ type ProjectDetailsProps = {
 	color: Colors
 }
 
-const ProjectDetails: React.FC<ProjectDetailsProps> = ({ techStack, occasion, year, tasks, color = 'pampas' }) => {
+const ProjectDetails: React.FC<ProjectDetailsProps> = ({ techStack, occasion, year, tasks, color = 'main' }) => {
 	return (
 		<div className={`w-full py-12 md:py-20 ${getBackgroundColor(color)}`}>
 			<div className="container flex flex-col">
