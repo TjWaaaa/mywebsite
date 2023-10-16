@@ -73,7 +73,9 @@ const HeaderBar: React.FC<HeaderBarProps> = ({ title, backgroundColor = 'main' }
 								onClick={() => router.replace(routes.home(HomeSections.heroSection))}
 								className="flex justify-center items-center"
 							>
-								<Image src={icon} alt="" className="w-8/12 sm:w-full h-8/12 sm:h-full" />
+								<div className="w-12 sm:w-14 h-12 sm:h-14 bg-accent-600 rounded-full" />
+								<div className="w-12 sm:w-14 h-12 sm:h-14 bg-accent-400 rounded-full -ml-6" />
+								<div className="w-12 sm:w-14 h-12 sm:h-14 bg-transparent border-2 -ml-6 border-dashed border-accent-600 rounded-full animate-spin-slow" />
 							</button>
 							{title && (
 								<div className="pt-1.5 text-main-800 flex sm:hidden md:flex gap-2 items-center">
