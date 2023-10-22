@@ -1,5 +1,5 @@
 import HeroSection from '@/components/local/(projects)/HeroSection/HeroSection'
-import image from '@/assets/images/chatbot/chatbot01.png'
+import image from '@/assets/images/chatbot/chatbot02.png'
 import { Metadata } from 'next'
 import { ButtonProps } from '@/components/global/Button/Button'
 import { routes } from '@/services/routes/routes'
