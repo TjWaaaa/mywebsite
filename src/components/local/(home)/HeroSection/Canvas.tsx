@@ -20,8 +20,8 @@ const mode1: AnimationMode = {
 	noiseX: 0.0015,
 	noiseY: 0.045,
 	noiseZ: 0.0008,
-	rangeB: [0.1, 0.35],
-	rangeC: [1, 0.65],
+	rangeB: [0.1, 0.3],
+	rangeC: [1, 0.75],
 }
 
 const mode2: AnimationMode = {
@@ -31,19 +31,19 @@ const mode2: AnimationMode = {
 	noiseX: 0.0008,
 	noiseY: 2,
 	noiseZ: 0.0008,
-	rangeB: [0.25, 0.6],
-	rangeC: [0.7, 0.95],
+	rangeB: [0.25, 0.4],
+	rangeC: [0.75, 0.98],
 }
 
 const mode3: AnimationMode = {
 	range: 16,
 	mapBottomLimit: -0.4,
 	mapTopLimit: 1,
-	noiseX: 0.001,
+	noiseX: 0.0014,
 	noiseY: 0.015,
 	noiseZ: 0.0012,
-	rangeB: [0.05, 0.35],
-	rangeC: [1, 0.7],
+	rangeB: [0.05, 0.3],
+	rangeC: [1, 0.75],
 }
 
 type CanvasType = {
@@ -76,7 +76,7 @@ const Canvas: React.FC<CanvasType> = ({ mode = 2, strokeWeight = 4 }) => {
 			p5.colorMode(p5.HSL)
 			let b = p5.map(i, 0, modi[mode].range, modi[mode].rangeB[0], modi[mode].rangeB[1])
 			let c = p5.map(i, 0, modi[mode].range, modi[mode].rangeC[0], modi[mode].rangeC[1])
-			p5.stroke(35, 100 * b, 100 * c)
+			p5.stroke(216, 100 * b, 100 * c)
 
 			p5.beginShape()
 			for (let x = 0; x < p5.windowWidth; x += 5) {

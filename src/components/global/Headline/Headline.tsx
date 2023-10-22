@@ -73,9 +73,9 @@ const Headline: React.FC<HeadlineProps> = ({
 			case '5xl':
 				return 'text-3xl sm:text-5xl'
 			case '6xl':
-				return 'text-4xl xs:text-5xl xl:text-6xl'
+				return 'text-3xl xs:text-5xl xl:text-6xl'
 			case '7xl':
-				return 'text-4xl sm:text-6xl xl:text-7xl'
+				return 'text-3xl sm:text-6xl xl:text-7xl'
 			case '8xl':
 				return 'text-5xl xs:text-6xl sm:text-7xl xl:text-8xl'
 		}

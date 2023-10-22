@@ -51,13 +51,13 @@ export default function Home() {
 	return (
 		<main className="scroll-smooth">
 			<HeaderBar />
-			<section data-section id={HomeSections.heroSection} className="scroll-mt-16 md:scroll-mt-32">
+			<section data-section id={HomeSections.heroSection} className="scroll-mt-16 sm:scroll-mt-32">
 				<HeroSection scrollY={scrollY} />
 			</section>
-			<section data-section id={HomeSections.experience} className="scroll-mt-16 md:scroll-mt-20">
+			<section data-section id={HomeSections.experience} className="scroll-mt-16 sm:scroll-mt-20">
 				<ExperienceSection />
 			</section>
-			<section data-section id={HomeSections.projects} className="scroll-mt-16 md:scroll-mt-20">
+			<section data-section id={HomeSections.projects} className="scroll-mt-16 sm:scroll-mt-20">
 				<ProjectSection />
 			</section>
 			{/* <section data-section id={HomeSections.playground}>

@@ -29,9 +29,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollY }) => {
 			<div id="canvas" className="relative w-full h-full">
 				<Canvas mode={backgroundMode} strokeWeight={12} />
 				<div className="container relative flex flex-col h-full z-20 pt-14 sm:pt-20">
-					<Headline level={1} size="7xl" className="text-center sm:text-left whitespace-nowrap">
-						Hi, I{"'"}m <span className="text-pampas-500">Timo</span>, I{"'"}m a<br />
-						Fullstack Developer
+					<Headline level={1} size="7xl" className="text-center sm:text-left whitespace-nowrap tracking-tighter">
+						Hi, I{"'"}m <span className="text-accent-400">Timo</span>, I{"'"}m a<br />
+						Frontend Developer
 					</Headline>
 					<div className="flex-1 flex flex-col sm:flex-row">
 						<div className="flex-1 sm:w-1/2 pb-10 sm:pb-8 flex flex-col justify-end sm:items-start items-center text-center sm:text-left">
@@ -45,7 +45,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollY }) => {
 									onClick={() => router.replace(routes.home(HomeSections.experience))}
 									className="relative h-12 -bottom-2 hidden sm:inline"
 								>
-									<Icon icon="arrow_downward" size="5xl" color={scrollY <= 100 ? 'pampas' : 'transparent'} />
+									<Icon icon="arrow_downward" size="5xl" color={scrollY <= 100 ? 'accent' : 'transparent'} />
 								</button>
 								{/* TODO: change to <Button /> */}
 							</div>

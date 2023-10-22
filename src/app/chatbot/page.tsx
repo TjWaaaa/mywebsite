@@ -24,13 +24,8 @@ const Chatbot = () => {
 	return (
 		<div>
 			<HeaderBar title="CBACB Chatbot" />
-			<HeroSection
-				imageSrc={image}
-				headline="CBACB"
-				description="This is not just a Chatbot"
-				buttons={buttons}
-			/>
-			<ProjectDetails color="pampas" year="Summer Term 2023" techStack={techStack} tasks={tasks} occasion={occasion} />
+			<HeroSection imageSrc={image} headline="CBACB" description="This is not just a Chatbot" buttons={buttons} />
+			<ProjectDetails color="main" year="Summer Term 2023" techStack={techStack} tasks={tasks} occasion={occasion} />
 			<Footer />
 		</div>
 	)
