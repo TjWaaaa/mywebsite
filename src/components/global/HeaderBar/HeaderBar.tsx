@@ -55,7 +55,7 @@ const HeaderBar: React.FC<HeaderBarProps> = ({ title, backgroundColor = 'main' }
 			case 'black':
 				return 'bg-black'
 			case 'main':
-				return 'bg-main-50'
+				return 'bg-main-100'
 		}
 	}
 
@@ -73,9 +73,9 @@ const HeaderBar: React.FC<HeaderBarProps> = ({ title, backgroundColor = 'main' }
 								onClick={() => router.replace(routes.home(HomeSections.heroSection))}
 								className="flex justify-center items-center"
 							>
-								<div className="w-12 sm:w-14 h-12 sm:h-14 bg-accent-600 rounded-full" />
-								<div className="w-12 sm:w-14 h-12 sm:h-14 bg-accent-400 rounded-full -ml-6" />
-								<div className="w-12 sm:w-14 h-12 sm:h-14 bg-transparent border-2 -ml-6 border-dashed border-accent-600 rounded-full animate-spin-slow" />
+								<div className="w-12 sm:w-14 h-12 sm:h-14 bg-accent-400 rounded-full" />
+								<div className="w-12 sm:w-14 h-12 sm:h-14 bg-accent-200 rounded-full -ml-6" />
+								<div className="w-12 sm:w-14 h-12 sm:h-14 bg-transparent border-2 -ml-6 border-dashed border-accent-400 rounded-full animate-spin-slow" />
 							</button>
 							{title && (
 								<div className="pt-1.5 text-main-800 flex sm:hidden md:flex gap-2 items-center">
@@ -86,7 +86,7 @@ const HeaderBar: React.FC<HeaderBarProps> = ({ title, backgroundColor = 'main' }
 						<div className="hidden sm:flex items-center gap-12 lg:gap-24 pt-2 ">
 							<Link
 								href={routes.home(HomeSections.heroSection)}
-								className="text-lg font-semibold text-accent-500 hover:text-accent-600"
+								className="text-lg font-semibold text-accent-400 hover:text-accent-600"
 							>
 								Home
 							</Link>
@@ -98,13 +98,13 @@ const HeaderBar: React.FC<HeaderBarProps> = ({ title, backgroundColor = 'main' }
 							</Link> */}
 							<Link
 								href={routes.home(HomeSections.experience)}
-								className="text-lg font-semibold text-accent-500 hover:text-accent-600"
+								className="text-lg font-semibold text-accent-400 hover:text-accent-600"
 							>
 								Experience
 							</Link>
 							<Link
 								href={routes.home(HomeSections.projects)}
-								className="text-lg font-semibold text-accent-500 hover:text-accent-600"
+								className="text-lg font-semibold text-accent-400 hover:text-accent-600"
 							>
 								Projects
 							</Link>

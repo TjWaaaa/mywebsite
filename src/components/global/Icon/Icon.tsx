@@ -62,7 +62,7 @@ const Icon: React.FC<IconProps> = ({ icon, isFilled = false, color = 'black', si
 			case 'main':
 				return 'text-main-800'
 			case 'accent':
-				return 'text-accent-500 hover:text-accent-600'
+				return 'text-accent-400 hover:text-accent-600'
 			case 'transparent':
 				return 'text-transparent'
 		}
