@@ -71,7 +71,7 @@ const Icon: React.FC<IconProps> = ({ icon, isFilled = false, color = 'black', si
 	return (
 		<i
 			style={isFilled ? { fontVariationSettings: "'FILL' 1" } : {}}
-			className={`${getTextColor(color)} ${getFontSize(size)} material-symbols-rounded duration-700 ease-in-out`}
+			className={`${getTextColor(color)} ${getFontSize(size)} material-symbols-rounded duration-200 ease-in-out`}
 		>
 			{icon}
 		</i>

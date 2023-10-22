@@ -83,28 +83,22 @@ const HeaderBar: React.FC<HeaderBarProps> = ({ title, backgroundColor = 'main' }
 								</div>
 							)}
 						</div>
-						<div className="hidden sm:flex items-center gap-12 lg:gap-24 pt-2 ">
+						<div className="hidden sm:flex items-center gap-12 lg:gap-24 pt-2">
 							<Link
 								href={routes.home(HomeSections.heroSection)}
-								className="text-lg font-semibold text-accent-400 hover:text-accent-600"
+								className="text-lg font-semibold text-accent-400 hover:text-accent-600 duration-200 ease-in-out"
 							>
 								Home
 							</Link>
-							{/* <Link
-								href={routes.home(HomeSections.aboutMe)}
-								className="w-24 text-lg font-semibold text-accent-700 hover:text-accent-950"
-							>
-								About Me
-							</Link> */}
 							<Link
 								href={routes.home(HomeSections.experience)}
-								className="text-lg font-semibold text-accent-400 hover:text-accent-600"
+								className="text-lg font-semibold text-accent-400 hover:text-accent-600 duration-200 ease-in-out"
 							>
 								Experience
 							</Link>
 							<Link
 								href={routes.home(HomeSections.projects)}
-								className="text-lg font-semibold text-accent-400 hover:text-accent-600"
+								className="text-lg font-semibold text-accent-400 hover:text-accent-600 duration-200 ease-in-out"
 							>
 								Projects
 							</Link>
