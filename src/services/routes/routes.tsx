@@ -1,4 +1,4 @@
-import { HomeSections } from "@/types/reactTypes"
+import { HomeSections } from '@/types/reactTypes'
 
 export const routes = {
 	home: (section: HomeSections) => {
@@ -30,5 +30,5 @@ export const routes = {
 		'https://xd.adobe.com/view/84ff3ede-91ba-48d1-b1d0-a365486e7c93-d1ac/screen/fec9e5f8-3821-4c26-8577-b5211c97f3a8?fullscreen',
 
 	settlers: '/settlers-of-catan',
-	extSettlersGitlab: '/',
+	extSettlersGitlab: 'https://gitlab.mi.hdm-stuttgart.de/tw086/se3-siedler-von-catan',
 }
