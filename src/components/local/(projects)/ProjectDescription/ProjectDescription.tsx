@@ -19,7 +19,7 @@ const ProjectDescription: React.FC<ProjectDescriptionProps> = ({
 	section2ClassName,
 }) => {
 	return (
-		<div className="w-full py-20 bg-pampas-200">
+		<div className="w-full py-12 md:py-20 bg-main-200">
 			<div className="container">
 				<div className="mb-8">
 					<Headline level={2} size="5xl">

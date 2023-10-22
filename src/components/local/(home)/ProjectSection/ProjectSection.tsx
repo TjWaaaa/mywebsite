@@ -3,13 +3,14 @@ import { routes } from '@/services/routes/routes'
 import siebtesLebenImage from '@/assets/images/siebtesLeben/siebtesLeben01.jpg'
 import beastImage from '@/assets/images/beast/beast01.png'
 import chatbotImage from '@/assets/images/chatbot/chatbot01.png'
+import settlersImage from '@/assets/images/settlers/settlers01.png'
 import aboutTomorrowImage from '@/assets/images/aboutTomorrow/aboutTomorrow01.png'
 import lightTomorrowImage from '@/assets/images/lightTomorrow/lightTomorrow01.png'
 import Headline from '@/components/global/Headline/Headline'
 
 const ProjectSection: React.FC = () => {
 	return (
-		<div className="w-full py-20">
+		<div className="w-full py-12 md:py-20">
 			<div className="container md:pr-20 lg:pr-24 xl:pr-28">
 				<div className="mb-6">
 					<Headline level={2} size="5xl">
@@ -25,7 +26,7 @@ const ProjectSection: React.FC = () => {
 						colSpan={2}
 					/>
 					<ProjectPreview title="B.E.A.S.T" year={2022} imageSrc={beastImage} href={routes.beast} />
-					<ProjectPreview title="Siedler von Catan" year={2021} imageSrc={beastImage} href={routes.settlers} />
+					<ProjectPreview title="Siedler von Catan" year={2021} imageSrc={settlersImage} href={routes.settlers} />
 					<ProjectPreview
 						title="About Tomorrow"
 						year={2022}

@@ -19,8 +19,8 @@ const ListItem: React.FC<ListItemProps> = ({ children, isActive, href }) => {
 		<a
 			href={href}
 			className={`${
-				isActive && 'bg-pampas-500'
-			} rounded-lg w-12 h-12 flex justify-center items-center hover:bg-pampas-400 duration-300`}
+				isActive && 'bg-main-400'
+			} rounded-lg w-12 h-12 flex justify-center items-center hover:bg-main-400 duration-300`}
 		>
 			{children}
 		</a>
@@ -30,7 +30,7 @@ const ListItem: React.FC<ListItemProps> = ({ children, isActive, href }) => {
 const Sidebar: React.FC<SidebarProps> = ({ activeSection = '', isVisible }) => {
 	return (
 		<div
-			className={`z-40 fixed flex flex-col items-center justify-between py-8 px-1 gap-3 bg-pampas-300 rounded-full right-4 lg:right-6 xl:right-8 2xl:right:10 top-1/3 drop-shadow-md font-bold duration-1000 ${
+			className={`z-40 fixed flex flex-col items-center justify-between py-8 px-1 gap-3 bg-main-200 rounded-full right-4 lg:right-6 xl:right-8 2xl:right:10 top-1/3 drop-shadow-md font-bold duration-1000 ${
 				isVisible ? '!opacity-0 md:!opacity-100' : '!opacity-0'
 			}`}
 		>

@@ -10,24 +10,25 @@ import Image from 'next/image'
 
 export const metadata: Metadata = {
 	title: 'B.E.A.S.T • Project',
-	description: 'UX Project in collaboration with AMG',
+	description: 'UX Project in collaboration with Mercedes Benz AMG',
 }
 
 const techStack: string[] = ['Sounds', 'Lights', 'Arduino']
 
 const tasks: string[] = ['Sound Selection', 'Light Animations', 'User Tests', 'Proximity Detection']
 
-const occasion: string[] = ['AMG', 'HdM', 'Interdisciplinary Project', 'Winter Term 2022']
+const occasion: string[] = [
+	'Interdisciplinary Project',
+	'Mercedes Benz AMG',
+	'Hochschule der Medien',
+	'Winter Term 2022',
+]
 
 const Beast = () => {
 	return (
 		<div>
 			<HeaderBar title="B.E.A.S.T" />
-			<HeroSection
-				imageSrc={image01}
-				headline="B.E.A.S.T"
-				description="Charging electric cars as an experience"
-			/>
+			<HeroSection imageSrc={image01} headline="B.E.A.S.T" description="Charging electric cars as an experience" />
 			<ProjectDescription
 				section1Title="Recap Video"
 				section2Title="Pitch"

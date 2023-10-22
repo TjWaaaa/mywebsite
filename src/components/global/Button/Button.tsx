@@ -26,7 +26,7 @@ const Button: React.FC<ButtonProps> = ({
 	text,
 	href,
 	onClick,
-	color = 'pampas',
+	color = 'main',
 	textColor = 'black',
 	hasPadding = true,
 }) => {
@@ -45,9 +45,9 @@ const Button: React.FC<ButtonProps> = ({
 		switch (color) {
 			case 'transparent':
 				return 'bg-transparent !px-0'
-			case 'pampas':
+			case 'main':
 			default:
-				return 'bg-pampas-200'
+				return 'bg-main-200'
 		}
 	}
 
@@ -55,7 +55,7 @@ const Button: React.FC<ButtonProps> = ({
 		return (
 			<Link
 				href={href}
-				className={`flex justify-center items-center bg-pampas-200 font-semibold ${getStyle(size)} ${getBackgroundColor(
+				className={`flex justify-center items-center bg-main-200 font-semibold ${getStyle(size)} ${getBackgroundColor(
 					color,
 				)} ${getTextColor(textColor)}`}
 			>
@@ -68,13 +68,13 @@ const Button: React.FC<ButtonProps> = ({
 		return (
 			<button
 				onClick={onClick}
-				className={`flex justify-center items-center bg-pampas-200 font-semibold ${getStyle(size)} ${getBackgroundColor(
+				className={`flex justify-center items-center bg-main-200 font-semibold ${getStyle(size)} ${getBackgroundColor(
 					color,
 				)} ${getTextColor(textColor)}`}
 			>
-				{icon && iconPos === 'left' && <Icon icon={icon} />}
+				{icon && iconPos === 'left' && <Icon icon={icon} size="2xl" />}
 				{text}
-				{icon && iconPos === 'right' && <Icon icon={icon} />}
+				{icon && iconPos === 'right' && <Icon icon={icon} size="2xl" />}
 			</button>
 		)
 	}
