@@ -31,7 +31,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollY }) => {
 				<div className="container relative flex flex-col h-full z-20 pt-14 sm:pt-20">
 					<Headline level={1} size="7xl" className="text-center sm:text-left whitespace-nowrap tracking-tighter">
 						Hi, I{"'"}m <span className="text-accent-400">Timo</span>, I{"'"}m a<br />
-						Full Stack Developer
+						Frontend Developer
 					</Headline>
 					<div className="flex-1 flex flex-col sm:flex-row">
 						<div className="flex-1 sm:w-1/2 pb-10 sm:pb-8 flex flex-col justify-end sm:items-start items-center text-center sm:text-left">
