@@ -37,15 +37,18 @@ const ProjectPreview: React.FC<ProjectPreviewProps> = ({
 	}
 
 	return (
-		<Link className={`group ${getColSpan()}`} href={href}>
-			<div className="h-40 sm:h-60 md:h-80 w-full bg-main-400 border-4 border-solid border-main-100 group-hover:border-main-500 rounded-2xl overflow-hidden duration-150 drop-shadow-sm">
+		<Link
+			className={`group ${getColSpan()} bg-main-100 hover:bg-main-200 duration-150 rounded-2xl hover:drop-shadow-sm`}
+			href={href}
+		>
+			<div className="h-40 sm:h-60 md:h-80 w-full bg-main-400 border-4 border-solid border-main-100 group-hover:border-main-500 rounded-t-2xl overflow-hidden duration-150 drop-shadow-sm">
 				<Image
 					className={`w-full h-full object-cover group-hover:scale-[100.5%] duration-150 ${imagePos}`}
 					src={imageSrc}
 					alt=""
 				/>
 			</div>
-			<div className="flex justify-between mt-4">
+			<div className="flex justify-between mt-4 mb-2 mx-8 group-hover:mx-[1.9rem] duration-150">
 				<Headline level={4} size="2xl">
 					{title}
 				</Headline>
