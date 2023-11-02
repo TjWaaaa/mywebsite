@@ -43,7 +43,7 @@ const LightTomorrow = () => {
 			/>
 			<ProjectDescription
 				section1Title="Project Idea"
-				section2Title="Pitch"
+				section2Title=" "
 				section1Content={
 					<Image className="rounded-2xl flex-1 object-cover object-center aspect-video" src={image02} alt="" />
 				}

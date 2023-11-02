@@ -14,7 +14,7 @@ import HeaderBar from '@/components/global/HeaderBar/HeaderBar'
 
 export const metadata: Metadata = {
 	title: 'About Tomorrow • Project',
-	description: 'Schone die Umwelt, kaufe langlebige Produkte',
+	description: 'Protect the environment, buy durable products',
 }
 
 const buttons: ButtonProps[] = [
@@ -43,7 +43,7 @@ const AboutTomorrow = () => {
 			<HeroSection
 				imageSrc={image01}
 				headline="About Tomorrow"
-				description="Schone die Umwelt, kaufe langlebige Produkte"
+				description="Protect the environment, buy durable products"
 				buttons={buttons}
 			/>
 			<ProjectDescription
