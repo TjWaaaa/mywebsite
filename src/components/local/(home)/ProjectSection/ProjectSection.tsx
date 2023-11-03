@@ -26,7 +26,7 @@ const ProjectSection: React.FC = () => {
 						colSpan={2}
 					/>
 					<ProjectPreview title="B.E.A.S.T" year={2022} imageSrc={beastImage} href={routes.beast} />
-					<ProjectPreview title="Siedler von Catan" year={2021} imageSrc={settlersImage} href={routes.settlers} />
+					<ProjectPreview title="Settlers of Catan" year={2021} imageSrc={settlersImage} href={routes.settlers} />
 					<ProjectPreview
 						title="About Tomorrow"
 						year={2022}
