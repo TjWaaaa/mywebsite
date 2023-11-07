@@ -2,8 +2,8 @@ import { ButtonProps } from '@/components/global/Button/Button'
 import HeroSection from '@/components/local/(projects)/HeroSection/HeroSection'
 import { routes } from '@/services/routes/routes'
 import { Metadata } from 'next'
-import image01 from '@/assets/images/aboutTomorrow/aboutTomorrow01.png'
-import image02 from '@/assets/images/aboutTomorrow/prototype.png'
+import image02 from '@/assets/images/aboutTomorrow/aboutTomorrow02.png'
+import image03 from '@/assets/images/aboutTomorrow/prototype.png'
 import ProjectDetails from '@/components/local/(projects)/ProjectDetails/ProjectDetails'
 import Footer from '@/components/global/Footer/Footer'
 import Image from 'next/image'
@@ -14,7 +14,7 @@ import HeaderBar from '@/components/global/HeaderBar/HeaderBar'
 
 export const metadata: Metadata = {
 	title: 'About Tomorrow • Project',
-	description: 'Schone die Umwelt, kaufe langlebige Produkte',
+	description: 'Protect the environment, buy durable products',
 }
 
 const buttons: ButtonProps[] = [
@@ -41,9 +41,9 @@ const AboutTomorrow = () => {
 		<div>
 			<HeaderBar title="About Tomorrow" />
 			<HeroSection
-				imageSrc={image01}
+				imageSrc={image02}
 				headline="About Tomorrow"
-				description="Schone die Umwelt, kaufe langlebige Produkte"
+				description="Protect the environment, buy durable products"
 				buttons={buttons}
 			/>
 			<ProjectDescription
@@ -61,7 +61,7 @@ const AboutTomorrow = () => {
 					<Link href={routes.extAboutTomorrowPrototype}>
 						<Image
 							className="rounded-2xl flex-1 object-cover object-center aspect-video hover:scale-[100.5%] duration-150"
-							src={image02}
+							src={image03}
 							alt=""
 						/>
 					</Link>
