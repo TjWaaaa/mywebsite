@@ -45,15 +45,12 @@ const LightTomorrow = () => {
 			/>
 			<ProjectDescription
 				section1Title="Project Idea"
-				section2Title="Description"
+				section2Title="Don't waste energy"
 				section1Content={
 					<Image className="rounded-2xl flex-1 object-cover object-center aspect-video" src={image02} alt="" />
 				}
 				section2Content={
 					<div className="h-full pt-4 md:pt-0 lg:justify-center flex flex-col xl:pr-28 gap-2">
-						<Headline level={2} size="2xl">
-							{`Don't waste energy`}
-						</Headline>
 						<p className="text-base leading-tight">
 							{`The aim of this project was to develop an intelligent lighting control system for open-plan offices. The system should be able to recognise whether a workstation is occupied or not and whether the sunlight is sufficient to illuminate the workstation adequately. The system should then use this sensor data to decide whether the light should be switched on or off.`}
 						</p>
