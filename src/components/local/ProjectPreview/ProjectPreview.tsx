@@ -49,7 +49,7 @@ const ProjectPreview: React.FC<ProjectPreviewProps> = ({
 								alt=""
 							/>
 						</div>
-						<div className="flex justify-between mt-4 pb-2 mx-8 group-hover:mx-[1.9rem] duration-150">
+						<div className="flex justify-between mt-4 pb-3 mx-8 group-hover:mx-[1.9rem] duration-150">
 							<Headline level={4} size="2xl" whitespace="whitespace-nowrap">
 								{title}
 							</Headline>
