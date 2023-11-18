@@ -1,14 +1,17 @@
 import Headline from '@/components/global/Headline/Headline'
 import ExperienceCard from '../../ExperienceCard/ExperienceCard'
+import FadeInContainer from '@/components/global/FadeInContainer/FadeInContainer'
 
 const ExperienceSection: React.FC = () => {
 	return (
 		<div className="w-full bg-main-50 py-12 md:py-20">
 			<div className="container md:pr-20 lg:pr-24 xl:pr-28">
 				<div className="mb-6">
-					<Headline level={2} size="5xl">
-						My Experience
-					</Headline>
+					<FadeInContainer type="fadeIn">
+						<Headline level={2} size="5xl">
+							My Experience
+						</Headline>
+					</FadeInContainer>
 				</div>
 				<div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
 					<ExperienceCard

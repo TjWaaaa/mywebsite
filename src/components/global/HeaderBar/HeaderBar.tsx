@@ -63,12 +63,12 @@ const HeaderBar: React.FC<HeaderBarProps> = ({ title, backgroundColor = 'main' }
 	return (
 		<div className="sticky top-0 z-50">
 			<div className="relative">
-				<FadeInContainer type="fadeIn">
-					<div
-						className={`relative z-40 w-full min-h-fit drop-shadow-sm duration-100 h-16 ${
-							isShrunk ? 'sm:h-20' : 'sm:h-32'
-						} ${getBackgroundColor(backgroundColor)}`}
-					>
+				<div
+					className={`relative z-40 w-full min-h-fit drop-shadow-sm duration-100 h-16 ${
+						isShrunk ? 'sm:h-20' : 'sm:h-32'
+					} ${getBackgroundColor(backgroundColor)}`}
+				>
+					<FadeInContainer type="fadeIn">
 						<div className="container h-full flex justify-between items-center">
 							<div className="flex gap-8 justify-center items-center">
 								<button
@@ -115,35 +115,35 @@ const HeaderBar: React.FC<HeaderBarProps> = ({ title, backgroundColor = 'main' }
 								/>
 							</div>
 						</div>
-					</div>
-					<div
-						className={`absolute z-30 w-full flex flex-col bg-main-100 drop-shadow-sm duration-300 ${
-							!menuOpen ? '-top-20' : 'top-16'
-						}`}
+					</FadeInContainer>
+				</div>
+				<div
+					className={`absolute z-30 w-full flex flex-col bg-main-100 drop-shadow-sm duration-300 ${
+						!menuOpen ? '-top-20' : 'top-16'
+					}`}
+				>
+					<Link
+						href={routes.home(HomeSections.heroSection)}
+						onClick={() => setMenuOpen(false)}
+						className="container w-full h-12 pt-1 flex items-center text-xl font-semibold text-accent-400 hover:text-accent-600 border-t border-white"
 					>
-						<Link
-							href={routes.home(HomeSections.heroSection)}
-							onClick={() => setMenuOpen(false)}
-							className="container w-full h-12 pt-1 flex items-center text-xl font-semibold text-main-800 hover:text-main-950 border-t border-white"
-						>
-							Home
-						</Link>
-						<Link
-							href={routes.home(HomeSections.experience)}
-							onClick={() => setMenuOpen(false)}
-							className="container w-full h-12 pt-1 flex items-center text-xl font-semibold text-main-800 hover:text-main-950 border-t border-white"
-						>
-							Experience
-						</Link>
-						<Link
-							href={routes.home(HomeSections.projects)}
-							onClick={() => setMenuOpen(false)}
-							className="container w-full h-12 pt-1 flex items-center text-xl font-semibold text-main-800 hover:text-main-950 border-t border-white"
-						>
-							Projects
-						</Link>
-					</div>
-				</FadeInContainer>
+						Home
+					</Link>
+					<Link
+						href={routes.home(HomeSections.experience)}
+						onClick={() => setMenuOpen(false)}
+						className="container w-full h-12 pt-1 flex items-center text-xl font-semibold text-accent-400 hover:text-accent-600 border-t border-white"
+					>
+						Experience
+					</Link>
+					<Link
+						href={routes.home(HomeSections.projects)}
+						onClick={() => setMenuOpen(false)}
+						className="container w-full h-12 pt-1 flex items-center text-xl font-semibold text-accent-400 hover:text-accent-600 border-t border-white"
+					>
+						Projects
+					</Link>
+				</div>
 			</div>
 		</div>
 	)
