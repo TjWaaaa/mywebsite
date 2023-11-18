@@ -7,15 +7,18 @@ import settlersImage from '@/assets/images/settlers/settlers01.png'
 import aboutTomorrowImage from '@/assets/images/aboutTomorrow/aboutTomorrow01.png'
 import lightTomorrowImage from '@/assets/images/lightTomorrow/lightTomorrow01.png'
 import Headline from '@/components/global/Headline/Headline'
+import FadeInContainer from '@/components/global/FadeInContainer/FadeInContainer'
 
 const ProjectSection: React.FC = () => {
 	return (
 		<div className="w-full py-12 md:py-20">
 			<div className="container md:pr-20 lg:pr-24 xl:pr-28">
 				<div className="mb-6">
-					<Headline level={2} size="5xl">
-						My Projects
-					</Headline>
+					<FadeInContainer type="fadeIn">
+						<Headline level={2} size="5xl">
+							My Projects
+						</Headline>
+					</FadeInContainer>
 				</div>
 				<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
 					<ProjectPreview

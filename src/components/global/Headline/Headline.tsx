@@ -13,7 +13,7 @@ type HeadlineProps = {
 	/** Font weight */
 	fontWeight?: FontWeights
 	/** Text align */
-	textAlign?: 'text-left' | 'text-center' | 'text-right'
+	textAlign?: 'text-left' | 'text-center' | 'text-right' | string
 	/** Text no break */
 	whitespace?:
 		| 'whitespace-normal'

@@ -26,7 +26,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollY }) => {
 	}, [])
 
 	return (
-		<div className="w-full sm:h-[calc(100vh_-_128px)]">
+		<div className="w-full min-h-[calc(100vh_-_256px)] sm:h-[calc(100vh_-_128px)]">
 			<FadeInContainer type="fadeIn">
 				<div id="canvas" className="relative w-full h-full">
 					<Canvas mode={backgroundMode} strokeWeight={12} />
@@ -53,7 +53,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollY }) => {
 								</div>
 							</div>
 							<div className="w-full sm:w-1/2 sm:pt-20 pb-10 flex flex-col justify-end sm:items-end gap-4 text-center sm:text-right">
-								<Headline level={4} size="5xl">
+								<Headline level={4} size="5xl" textAlign="text-center sm:text-right">
 									passionate & dedicated
 								</Headline>
 								<div className="w-full md:w-[574px] pb-1 flex flex-row sm:flex-col gap-4 justify-between font-semibold sm:gap-2 xl:gap-12 xl:flex-row text-left sm:text-right xl:text-left">

@@ -15,10 +15,12 @@ const FadeInContainer: React.FC<FadeInContainerProps> = ({ children, width = 'fi
 	const mainControls = useAnimation()
 
 	useEffect(() => {
-		if (isInView) {
+		if (type === 'slideIn' && isInView) {
+			mainControls.start('visible')
+		} else if (type === 'fadeIn') {
 			mainControls.start('visible')
 		}
-	}, [isInView, mainControls])
+	}, [isInView, mainControls, type])
 
 	return (
 		<div ref={ref} className={`relative h-full`}>
