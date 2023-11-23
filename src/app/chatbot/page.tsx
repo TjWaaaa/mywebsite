@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 	description: 'Web Chatbot for the course "Mobile Web Applications"',
 }
 
-const buttons: ButtonProps[] = [{ size: 'md', text: 'Gitlab', href: routes.extChatbotGitlab }]
+const buttons: ButtonProps[] = [{ size: 'md', text: 'Github', href: routes.extChatbotGithub }]
 
 const techStack: string[] = ['React', 'Redux', 'SocketIO', 'TypeScript', 'Express', 'Prisma', 'PostgreSQL']
 

@@ -19,10 +19,10 @@ export const routes = {
 	// extBeastPitch: 'https://drive.google.com/drive/folders/1AjzgFhwvH6kDlfXtaFIQkTuLtTAWimU2',
 
 	chatbot: '/chatbot',
-	extChatbotGitlab: 'https://gitlab.mi.hdm-stuttgart.de/mwa/ws22/cbacb',
+	extChatbotGithub: 'https://github.com/TjWaaaa/Chatbot',
 
 	lightTomorrow: '/light-tomorrow',
-	extLightTomorrowGitlab: 'https://gitlab.mi.hdm-stuttgart.de/csiot/ss23/lighttomorrow',
+	extLightTomorrowGithub: 'https://github.com/TjWaaaa/LightTomorrow',
 
 	aboutTomorrow: '/about-tomorrow',
 	extAboutTomorrowWebsite: 'https://durability.about-tomorrow.de/',
@@ -30,5 +30,5 @@ export const routes = {
 		'https://xd.adobe.com/view/84ff3ede-91ba-48d1-b1d0-a365486e7c93-d1ac/screen/fec9e5f8-3821-4c26-8577-b5211c97f3a8?fullscreen',
 
 	settlers: '/settlers-of-catan',
-	extSettlersGitlab: 'https://gitlab.mi.hdm-stuttgart.de/tw086/se3-siedler-von-catan',
+	extSettlersGithub: 'https://github.com/TjWaaaa/SiedlerVonCatan',
 }

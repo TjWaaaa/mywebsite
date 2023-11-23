@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 	description: 'A project for the course "Cloud Systems and Internet of Things"',
 }
 
-const buttons: ButtonProps[] = [{ size: 'md', text: 'Gitlab', href: routes.extSiebtesLebenGithub }]
+const buttons: ButtonProps[] = [{ size: 'md', text: 'Github', href: routes.extSiebtesLebenGithub }]
 
 const techStack: string[] = [
 	'Terraform',

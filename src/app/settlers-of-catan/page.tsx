@@ -16,9 +16,9 @@ export const metadata: Metadata = {
 	description: 'Digital board game for solo players or online with friends',
 }
 
-const buttons: ButtonProps[] = [{ size: 'md', text: 'Gitlab', href: routes.extSettlersGitlab }]
+const buttons: ButtonProps[] = [{ size: 'md', text: 'Github', href: routes.extSettlersGithub }]
 
-const techStack: string[] = ['Unity', 'Blender', 'C#', 'Gitlab']
+const techStack: string[] = ['Unity', 'Blender', 'C#', 'Github']
 
 const tasks: string[] = ['Game Logic', 'UI Programming']
 
